@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(66,66,127,0.7);
+}
+.background{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    /* dung de khoa 1 element lai */
+    z-index: -10;
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+
+}
+.background-trans{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    /* dung de khoa 1 element lai */
+    z-index: -9;
+    background-color: rgba(66,66,127,0.7);
+}
+.body{
+
+    width: 100vw;
+    /* height: 100vh; */
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.title,.title-desciption{
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+.title-desciption{
+    font-style: italic;
+    font-size: 20px;
+}
+.title{
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+.border{
+    border: 1px solid red;
+}
+.survey-form{
+    width: 50%;
+    /* height: 2000px; */
+    align-self: center;
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+}
+.form-component{
+    /* margin: 2% 2%; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+label{
+    color: white;
+    font-size: 25px;
+}
+input,select{
+    height: 3.5vh;
+    margin-top: 1%;
+    padding: 2% 2%;
+    outline: none;
+    border-radius: 5px;
+    border:none;
+    font-size:20px;
+}
+input::placeholder{
+    color: red;
+    font-size: 12px!important;
+}
+select{
+    padding: 0% 2%;
+}
+.radio-box{
+    display: flex;
+    align-items: center;
+}
+input[type=radio]{
+    margin-right:2% ;
+}
+textarea{
+    padding: 2% 2%;
+    font-size: 20px;
+    resize: none;
+}
+input[type=button]{  
+    padding: 0% 0%;
+    color: white;
+    background-color: green;
+}

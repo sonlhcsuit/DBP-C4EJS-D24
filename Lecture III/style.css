@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 3000px;
+
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    background-color: transparent;
+    outline: none;
+}
+/* tạo 1 block */
+
+.btn--primary{
+    color: white;
+    background-color: blue;
+}
+
+.btn--secondary{
+    color: white;
+    background-color: green;
+}
+.btn--rounded{
+    border-radius: 20px;
+}
+/* ---------------------------------------- */
+.border{
+    border:1px solid red;
+}
+.nav {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    /* left: 0;
+    top: 0; */
+}
+.nav__item{
+    /* display: inline-block; */
+    width: 100px;
+    height: 50px;
+    outline: none;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.nav__item--active{
+    background-color: greenyellow;
+    color: black;
+
+}
+.nav__item--active:hover > .nav__title--active{
+    color: white;
+}
+
+.nav__title{
+    color: white;
+    text-decoration: none;
+
+}
+.nav__title--active{
+    color: black;
+}
+
+
+
+
+
+
+
+/* .rect {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    left: 100;
+    top: 100;
+
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position: absolute;
+    left: 10;
+    top: 10;
+
+}
+.square{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 100px; 
+   
+
+    position: absolute;
+    left: 100;
+    top: 100;
+} */

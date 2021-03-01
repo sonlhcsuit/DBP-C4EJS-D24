@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background">
+        <!-- element nay dung de tao background -->
+    </div>
+    <div class="background-trans">
+        <!-- element nay dung de tao background -->
+    </div>
+    <div class="body">
+        <div class="title-container">
+            <h1 class="title">
+                freeCodeCamp Survey Form
+            </h1>
+            <p class="title-desciption">
+                Thank you for taking the time to help us improve the platform
+
+            </p>
+        </div>
+        <form class="survey-form border">
+            <div class="form-component" plcade>
+                <label>
+                    Name
+                </label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="form-component">
+                <label>
+                    Email
+                </label>
+                <input type="email" placeholder="Enter your Email">
+            </div>
+            <div class="form-component">
+                <label>
+                    Age
+                </label>
+                <input type="number" placeholder="Age">
+            </div>
+            <div class="form-component">
+                <label>
+                    Which option best describes your current role?
+                </label>
+                <select>
+                    <option selected disabled >Select current role</option>
+
+                    <option value="Student">Student</option>
+                    <option>Full time Job</option>
+                    <option>Full time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+
+                </select>
+
+            </div>
+            <div class="form-component">
+                <label>
+                    Would you recommend freeCodeCamp to a friend?
+                </label>
+                <div class="radio-box">
+                    <input type="radio" name="selection" > <label>Definitely</label>
+
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="selection" > <label>Maybe</label>
+
+                </div>
+                <div class="radio-box">
+                    <input type="radio" name="selection" > <label>Not Sure</label>
+
+                </div>
+            </div>
+            <div class="form-component">
+                <label>
+                    What is your favorite feature of freeCodeCamp?
+                </label>
+                <select>
+                    <option selected disabled >Select an option</option>
+
+                    <option value="Student">Challenges</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                    <option>Projects</option>
+
+                </select>
+
+            </div>
+            <div class="form-component">
+                <label>
+                    What would you like to see improved? (Check all that apply)
+                </label>
+                <div class="check-box">
+                    <input type="checkbox" name="selection" > <label>Definitely</label>
+
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="selection" > <label>Maybe</label>
+
+                </div>
+                <div class="check-box">
+                    <input type="checkbox" name="selection" > <label>Not Sure</label>
+
+                </div>
+            </div>
+            <div class="form-component" plcade>
+                <label>
+                    Any comments or suggestions?
+                </label>
+                
+                <textarea name="" id="" cols="30" rows="10" placeholder="Any suggestion?"></textarea>
+            </div>
+            <div class="form-component" >
+                <input type="button" value="Submit">
+            </div>
+        </form>
+
+
+    </div>
+</body>
+<!-- Scorer -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

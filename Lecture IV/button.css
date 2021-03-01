@@ -1,0 +1,64 @@
+:root{
+    
+    --color-first: #549ac8;
+    --color-second: #183378;
+    --color-third: #efb048;
+    
+
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.border{
+    border: 1px solid red;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    background-color: var(--color-first);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 183378 xanh dam */
+    /* efb048 vang */
+}
+.container__rectangle{
+    width: 70%;
+    height: 70%;
+    background-color:var(--color-second);
+
+}
+.container__circle{
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    background-color: var(--color-first);
+}
+.container__circle--medium{
+    width: 35vh;
+    height: 35vh;
+    background-color: var(--color-second);
+    z-index: 1;
+    top: 17.5vh;
+}
+.container__circle--small{
+    width: 10vh;
+    height: 10vh;
+    background-color: var(--color-third);
+    z-index: 2;
+    top: 30vh;
+}

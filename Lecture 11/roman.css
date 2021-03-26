@@ -28,9 +28,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.main__body{
-    /* thêm những thuộc tính riêng */
-}
+/* .main__body{
+    thêm những thuộc tính riêng
+} */
 #inp{
     height: 50px;
     width: 70%;

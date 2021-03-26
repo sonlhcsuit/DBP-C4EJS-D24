@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./csv.css">
+    <title>Document</title>
+
+</head>
+
+<body class="fl center">
+    <form class="main  fl ">
+        <div class="main__input ">
+            <textarea id="inp" class="main__input--inp"></textarea>
+        </div>
+        <div class="main__control fl center col center">
+            <input id="tocsv" type="button" value="to CSV" class="main__control--btn">
+            <input id="tojson" type="button" value="to JSON" class="main__control--btn">
+
+        </div>
+        <div class="main__output ">
+            <textarea id="out" class="main__output--out" readonly></textarea>
+
+        </div>
+    </form>
+</body>
+<script src="./csv.js"></script>
+
+</html>

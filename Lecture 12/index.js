@@ -1,26 +1,27 @@
 let btn = document.getElementById("btn")
 let input = document.getElementById("user_id")
 let output = document.getElementById('out')
-const host = 'https://6061c450ac47190017a719f7.mockapi.io'
-let endpoint = 'users'
-btn.addEventListener("click", function(event) {
-    let id = input.value
-    console.log(input.value)
-    makeRequest(host + '/' + endpoint + '/' + id + '/product')
+const host = 'https://pokeapi.co/api/v2'
+let endpoint = 'pokemon'
+btn.addEventListener("click", async function(event) {
+    let pokemon_name = input.value
+    let img_src = await makeRequest(`${host}/${endpoint}/${pokemon_name}`)
+    output.insertAdjacentHTML("beforeend", createPokemon(pokemon_name, img_src))
 
 })
 
 async function makeRequest(url) {
-    console.log('Make request')
     let response = await fetch(url)
     let data = await response.json()
+    let img_src = data.sprites.other["official-artwork"].front_default
+    return img_src
+}
 
-
-    let out_str = []
-    for(let i = 0;i<data.length;i++){
-        out_str.push(data[i].name)
-    }
-    output.innerHTML = out_str.join('<br/>')
-    
-    //     // show ra man hinh
+function createPokemon(name, img) {
+    return `
+        <div>
+            <h1>Pokemon: ${name.toUpperCase()}</h1>
+            <img class="small" src="${img}"/>
+        </div>
+    `
 }

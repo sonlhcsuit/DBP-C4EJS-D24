@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.nav {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}
+
+.nav>h1 {
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.search {
+    height: 5vh;
+}
+
+.search>.search__form {
+    display: block;
+    height: 100%!important;
+    display: flex;
+    align-items: center;
+}
+
+.search__form>input {
+    height: 90%;
+}
+
+.search__form>input[type=text] {
+    margin-left: 35%;
+    width: 20%;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    padding: 0 10px;
+    border-bottom: 2px solid black;
+}
+
+.search__form>input[type=text]::placeholder {
+    color: black;
+}
+
+.search__form>input[type=button] {
+    margin-left: 20px;
+    height: 75%;
+    padding: 0 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: aqua;
+    background-color: black;
+    outline: none;
+}
+
+.forecast {
+    /* height: 85vh; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+.forecast__city{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 20%;
+    border-radius: 20px;
+}
+.forecast__city__header {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forecast__city__header > .forecast__city__header__cityname{
+    text-transform: capitalize;
+    color:black;
+}
+.forecast__city__header > .forecast__city__header__country{
+    background-color: orange;
+    padding: 0 10px;
+    border-radius: 10px;
+    position: relative;
+    top: -20%;
+    text-transform: uppercase;
+}
+.forecast__city__body{
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.forecast__city__body > .forecast__city__body__temperature > h1{
+    font-size: 80px;
+    padding: 0 20px;
+}
+.forecast__city__body__short-description {
+    height: 15%;
+}
+.forecast__city__body__short-description > h1 {
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+.forecast__city__body__icon > img{
+    padding: 0 20px;
+}
